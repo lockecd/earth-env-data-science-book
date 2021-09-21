@@ -72,11 +72,12 @@ adopted from the [Carpentries GitHub Remotes lesson](https://swcarpentry.github.
 1. Open a terminal in JupyterHub
 1. Type the command
    ```
-   ssh-keygen -t ed25519 -C "YOUR EMAIL ADDRESS GOES HERE"`
+   ssh-keygen -t ed25519 -C "YOUR EMAIL ADDRESS GOES HERE"
    ```
-   (Don't just copy this text; you have to put in tour actual email address in between the quotes.) This command will create an ssh public / private key pair.
-1. Enter a password for your new SSH key and record it in a safe place.
-   This password is used to "lock" the SSH key. It can't be used without the password.
+   (Don't just copy this text; you have to put in your actual email address in between the quotes.) This command will create an ssh public / private key pair.
+1. You will be prompted to enter a file in which to save the key. Do not do this! Press "Enter" instead.
+1. Enter a passphrase for your new SSH key and record it in a safe place.
+   This passphrase is used to "lock" the SSH key. It can't be used without the password.
 1. Type the command
    ```
    cat ~/.ssh/id_ed25519.pub
@@ -90,7 +91,7 @@ adopted from the [Carpentries GitHub Remotes lesson](https://swcarpentry.github.
    ```
    ssh -T git@github.com
    ```
-   on the command like of the JupyterHub. (Note you will have to enter your SSH key password from step 3.)
+   on the command like of the JupyterHub. (Note you will have to enter your SSH key password from step 4.)
 
 You should now be able to push to GitHub.
 
